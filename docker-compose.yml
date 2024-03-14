@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+    react-django:
+      image: vinit180/django-react:latest
+      ports:
+        - '3000:3000'
+

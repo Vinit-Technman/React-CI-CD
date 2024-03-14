@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-djangodemo-dev-124839-authRole",
+      "UnauthRoleArn": "arn:aws:iam::654654231317:role/amplify-djangodemo-dev-124839-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::654654231317:role/amplify-djangodemo-dev-124839-authRole",
+      "Region": "ap-south-1",
+      "DeploymentBucketName": "amplify-djangodemo-dev-124839-deployment",
+      "UnauthRoleName": "amplify-djangodemo-dev-124839-unauthRole",
+      "StackName": "amplify-djangodemo-dev-124839",
+      "StackId": "arn:aws:cloudformation:ap-south-1:654654231317:stack/amplify-djangodemo-dev-124839/b403fdf0-e222-11ee-b83d-0658857cd5c6",
+      "AmplifyAppId": "dridolf2amewy"
+    },
+    "categories": {
+      "auth": {
+        "djangodemocd27c669": {}
+      }
+    }
+  }
+}
