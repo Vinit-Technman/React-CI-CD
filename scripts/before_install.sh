@@ -25,7 +25,7 @@ sudo curl -L https://github.com/docker/compose/releases/latest/download/docker-c
 sudo chmod +x /usr/local/bin/docker-compose
 
 
-cd /app
+cd /home/ec2-user/app
 
 # install node and npm
 sudo yum install curl
