@@ -23,6 +23,7 @@ const Auth = ({signOut,user}) => {
           window.location.href='/';
         },
       };
+      console.log("BYE");
   return (
     <><Authenticator services={services} initialState="signUp">
     {/* {({ signOut }) => <button onClick={signOut}>Sign out</button>} */}
