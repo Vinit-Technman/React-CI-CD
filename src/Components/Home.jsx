@@ -22,8 +22,8 @@ const Home = () => {
   
 const loadPage=(p)=>{
   axios.get(`${process.env.REACT_APP_API_URL}page`).then((data)=>{
-    console.log("------------>",data);
-  //   setPaginatedItems(data?.data?.data);
+    console.log("------------>",data?.data);
+    setPaginatedItems(data?.data);
   // setHasNextPage(data?.data?.has_next);
 
   }).catch((err)=>{
@@ -60,7 +60,7 @@ useEffect(()=>{
   return (
     <div className='container'>
     {user!==null ?<>
-      <form class="d-flex mt-4 flex-row gap-5 w-25" role="search" onSubmit={handleSearch}>
+      {/* <form class="d-flex mt-4 flex-row gap-5 w-25" role="search" onSubmit={handleSearch}>
         <label htmlFor="student">Search Student</label>
         <p className='d-flex flex-row'>
     <input class="me-2" id='student' type="search" placeholder="Search" aria-label="Search" onChange={(e)=>setSearchData(e.target.value)} />
@@ -74,28 +74,39 @@ useEffect(()=>{
     onChange={(e)=>setRowsPerPage(e.target.value)}
     />
     <button class="btn btn-outline-success" type="submit">Enter</button>
-</form>
+</form> */}
       <table className="table">
     <thead>
       <tr>
-        <th scope="col">#</th>
-        <th scope="col">First</th>
-        <th scope="col">Last</th>
-        <th scope="col">Handle</th>
+        <th scope="col">Rollno</th>
+        <th scope="col">Name</th>
+        {/* <th scope="col">Last</th>
+        <th scope="col">Handle</th> */}
       </tr>
     </thead>
     <tbody>
-              {
+      {paginatedItems && console.log(paginatedItems)}
+      <tr>
+        <td>{paginatedItems.name}</td>
+      </tr>
+      {paginatedItems && console.log(typeof(paginatedItems))}
+      {
+        paginatedItems?.map((e,id)=>{
+          console.log(e);
+          return (<tr key={id}>
+            <td>{e?.rollno}</td>
+            <td>{e?.name}</td>
+          </tr>)
+        })
+      }
+              {/* {paginatedItems && 
           paginatedItems?.map((e,id)=>{
             return (<tr key={id}>
-              <td>{e?.id}</td>
-              <td>{e?.name}</td>
               <td>{e?.rollno}</td>
-              <td>{e?.standard}</td>
-              <td>{e?.course}</td>
+              <td>{e?.name}</td>
             </tr>)
           })
-        }
+        } */}
         
     </tbody>
   </table>
