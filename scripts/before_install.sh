@@ -33,4 +33,4 @@ curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
 sudo yum install nodejs -y
 sudo yum install npm -y
 sudo yum install nginx -y
-ufw allow 'Nginx HTTP'
+sudo ufw allow 'Nginx HTTP'
