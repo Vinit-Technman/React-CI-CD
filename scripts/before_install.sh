@@ -25,12 +25,12 @@ sudo curl -L https://github.com/docker/compose/releases/latest/download/docker-c
 sudo chmod +x /usr/local/bin/docker-compose
 
 
-# cd /app
+cd /app
 
-# # install node and npm
-# apt-get install curl
-# curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
-# apt-get install nodejs -y
-# apt-get install npm -y
-# apt install nginx -y
-# ufw allow 'Nginx HTTP'
+# install node and npm
+sudo yum install curl
+curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+sudo yum install nodejs -y
+sudo yum install npm -y
+sudo yum install nginx -y
+ufw allow 'Nginx HTTP'
