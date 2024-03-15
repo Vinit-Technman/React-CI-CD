@@ -8,6 +8,7 @@ const Navbar = () => {
     const signOut=()=>{
       localStorage.removeItem('CognitoIdentityServiceProvider.15tebea328r4iu74dinskqonih.LastAuthUser')
       localStorage.removeItem('CognitoIdentityServiceProvider.15tebea328r4iu74dinskqonih.vinit123.idToken')
+      window.location.reload();
       // localStorage.de('CognitoIdentityServiceProvider.15tebea328r4iu74dinskqonih.LastAuthUser')
     }
 
@@ -19,7 +20,7 @@ const Navbar = () => {
     <>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
-    <a class="navbar-brand" href="/"/>StudMan
+    <a class="navbar-brand" href="/">StudMan</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
