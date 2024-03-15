@@ -17,10 +17,7 @@ const Navbar = () => {
 
     const [user,setUser]=useState('');
     useEffect(()=>{
-      console.log(1);
-      console.log(1);
-
-      console.log(1);
+    
 
         setUser(localStorage.getItem('CognitoIdentityServiceProvider.15tebea328r4iu74dinskqonih.LastAuthUser'));
     })
