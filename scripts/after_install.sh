@@ -7,6 +7,8 @@ cd /home/ec2-user/app
 npm install
 npm install --save react react-dom react-scripts
 npm install pm2 -g
+
+
 # npm run build
 # cp -r build/* /var/www/html
 
