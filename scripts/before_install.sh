@@ -32,9 +32,9 @@ sudo yum install curl
 curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
 sudo yum install nodejs -y
 sudo yum install npm -y
-sudo yum install nginx -y
+# sudo yum install nginx -y
 
-sudo amazon-linux-extras install epel -y
-sudo yum install --enablerepo="epel" ufw
-ufw --version
-sudo ufw allow 'Nginx HTTP'
+# sudo amazon-linux-extras install epel -y
+# sudo yum install --enablerepo="epel" ufw
+# ufw --version
+# sudo ufw allow 'Nginx HTTP'
