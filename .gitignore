@@ -27,7 +27,7 @@ yarn-error.log*
 
 
 # USER_DATA SCRIPT FOR EC2
-#!/bin/bash
+# !/bin/bash
 
 # sudo yum update -y
 # sudo yum install docker -y
