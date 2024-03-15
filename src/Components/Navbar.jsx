@@ -9,11 +9,15 @@ const Navbar = () => {
       localStorage.removeItem('CognitoIdentityServiceProvider.15tebea328r4iu74dinskqonih.LastAuthUser')
       localStorage.removeItem('CognitoIdentityServiceProvider.15tebea328r4iu74dinskqonih.vinit123.idToken')
       window.location.reload();
+
+
+
       // localStorage.de('CognitoIdentityServiceProvider.15tebea328r4iu74dinskqonih.LastAuthUser')
     }
 
     const [user,setUser]=useState('');
     useEffect(()=>{
+      console.log(1);
         setUser(localStorage.getItem('CognitoIdentityServiceProvider.15tebea328r4iu74dinskqonih.LastAuthUser'));
     })
   return (
