@@ -5,8 +5,10 @@ cd /app
 
 # # install dependencies
 npm install
-npm run build
-cp -r build/* /var/www/html
+npm install --save react react-dom react-scripts react-particles-js
+npm install pm2 -g
+# npm run build
+# cp -r build/* /var/www/html
 
 
 

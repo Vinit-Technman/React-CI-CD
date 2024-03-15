@@ -12,7 +12,7 @@ const Auth = ({signOut,user}) => {
           // custom username
           username = username.toLowerCase();
           attributes.email = attributes.email.toLowerCase();
-          return Auth.signUp({
+          await Auth.signUp({
             username,
             password,
             attributes,
@@ -20,6 +20,7 @@ const Auth = ({signOut,user}) => {
               enabled: true,
             },
           });
+          window.location.href='/';
         },
       };
   return (
